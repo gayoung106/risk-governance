@@ -1,0 +1,4 @@
+people_mean: 1.5293
+worker_mean: 3.5149
+t-value: -52.5073
+p-value: 0.0000000000
