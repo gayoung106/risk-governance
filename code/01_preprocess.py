@@ -84,21 +84,21 @@ risk_cols = filter_valid_cols(
     [c for c in people_df.columns if c.startswith(('q21','q22'))]
 )
 
-trust_cols = filter_valid_cols(
-    [c for c in people_df.columns if c.startswith(('q25','q26'))]
-)
+# trust는 index로 만들지 않음
+trust_col = 'q26_1'
+safety_col = 'q25'
 
 print("\n PEOPLE 변수 컬럼")
 print("consent:", consent_cols)
 print("manage:", manage_cols)
 print("risk:", risk_cols)
-print("trust:", trust_cols)
+print("trust:", trust_col)
 
 # 숫자 변환
 people_df = to_numeric_safe(people_df, consent_cols)
 people_df = to_numeric_safe(people_df, manage_cols)
 people_df = to_numeric_safe(people_df, risk_cols)
-people_df = to_numeric_safe(people_df, trust_cols)
+people_df = to_numeric_safe(people_df, [trust_col, safety_col])
 
 # index 생성
 if consent_cols:
@@ -110,8 +110,8 @@ if manage_cols:
 if risk_cols:
     people_df['risk'] = people_df[risk_cols].mean(axis=1)
 
-if trust_cols:
-    people_df['trust'] = people_df[trust_cols].mean(axis=1)
+people_df['trust'] = people_df[trust_col]
+people_df['safety_perception'] = people_df[safety_col]
 
 print(" PEOPLE 변수 생성 완료")
 
@@ -156,7 +156,7 @@ print(" clean 폴더 저장")
 # 결과 확인 출력
 # -------------------------
 print("\n PEOPLE sample")
-print(people_df[['consent','manage_trust','risk','trust']].head())
+print(people_df[['consent','manage_trust','risk','trust','safety_perception']].head())
 
 print("\n WORKER sample")
 print(worker_df[['management','safety']].head())
