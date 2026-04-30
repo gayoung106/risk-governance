@@ -1,0 +1,3 @@
+consent_alpha: 0.8758
+manage_alpha: 0.8336
+risk_alpha: 0.8329
