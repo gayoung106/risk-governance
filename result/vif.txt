@@ -1,0 +1,4 @@
+            variable        VIF
+0       manage_trust  12.997099
+1               risk  22.693900
+2  safety_perception  11.408134
