@@ -1,0 +1,131 @@
+======================================================================
+회귀분석 재추정 결과 (통제변수 포함)
+분석 표본 N = 1094
+======================================================================
+
+[Model 1: 기본 OLS - 통제변수 없음]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                consent   R-squared:                       0.504
+Model:                            OLS   Adj. R-squared:                  0.503
+Method:                 Least Squares   F-statistic:                     369.7
+Date:                Mon, 18 May 2026   Prob (F-statistic):          1.42e-165
+Time:                        12:49:52   Log-Likelihood:                -877.45
+No. Observations:                1094   AIC:                             1763.
+Df Residuals:                    1090   BIC:                             1783.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 1.4201      0.131     10.816      0.000       1.162       1.678
+manage_trust          0.7121      0.024     29.854      0.000       0.665       0.759
+risk                 -0.0586      0.023     -2.595      0.010      -0.103      -0.014
+safety_perception    -0.1916      0.037     -5.236      0.000      -0.263      -0.120
+==============================================================================
+Omnibus:                       94.428   Durbin-Watson:                   2.039
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              176.483
+Skew:                          -0.571   Prob(JB):                     4.76e-39
+Kurtosis:                       4.602   Cond. No.                         46.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+[Model 2: OLS + 인구통계 통제변수]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                consent   R-squared:                       0.508
+Model:                            OLS   Adj. R-squared:                  0.505
+Method:                 Least Squares   F-statistic:                     140.2
+Date:                Mon, 18 May 2026   Prob (F-statistic):          1.99e-161
+Time:                        12:49:52   Log-Likelihood:                -873.05
+No. Observations:                1094   AIC:                             1764.
+Df Residuals:                    1085   BIC:                             1809.
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 1.5435      0.194      7.973      0.000       1.164       1.923
+manage_trust          0.7131      0.024     29.841      0.000       0.666       0.760
+risk                 -0.0637      0.023     -2.794      0.005      -0.108      -0.019
+safety_perception    -0.1906      0.037     -5.191      0.000      -0.263      -0.119
+female                0.0743      0.033      2.248      0.025       0.009       0.139
+age                  -0.0022      0.002     -1.486      0.138      -0.005       0.001
+edu_college           0.0677      0.089      0.761      0.447      -0.107       0.242
+edu_grad              0.0783      0.156      0.502      0.616      -0.228       0.385
+income               -0.0352      0.065     -0.539      0.590      -0.163       0.093
+==============================================================================
+Omnibus:                       90.057   Durbin-Watson:                   2.043
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              169.504
+Skew:                          -0.547   Prob(JB):                     1.56e-37
+Kurtosis:                       4.588   Cond. No.                         613.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+[Model 3: HC3 강건 표준오차 + 통제변수]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                consent   R-squared:                       0.508
+Model:                            OLS   Adj. R-squared:                  0.505
+Method:                 Least Squares   F-statistic:                     113.4
+Date:                Mon, 18 May 2026   Prob (F-statistic):          1.70e-137
+Time:                        12:49:52   Log-Likelihood:                -873.05
+No. Observations:                1094   AIC:                             1764.
+Df Residuals:                    1085   BIC:                             1809.
+Df Model:                           8                                         
+Covariance Type:                  HC3                                         
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 1.5435      0.220      7.009      0.000       1.112       1.975
+manage_trust          0.7131      0.028     25.163      0.000       0.658       0.769
+risk                 -0.0637      0.023     -2.780      0.005      -0.109      -0.019
+safety_perception    -0.1906      0.036     -5.308      0.000      -0.261      -0.120
+female                0.0743      0.033      2.244      0.025       0.009       0.139
+age                  -0.0022      0.001     -1.541      0.123      -0.005       0.001
+edu_college           0.0677      0.097      0.698      0.485      -0.122       0.258
+edu_grad              0.0783      0.169      0.463      0.644      -0.253       0.410
+income               -0.0352      0.072     -0.491      0.623      -0.176       0.105
+==============================================================================
+Omnibus:                       90.057   Durbin-Watson:                   2.043
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              169.504
+Skew:                          -0.547   Prob(JB):                     1.56e-37
+Kurtosis:                       4.588   Cond. No.                         613.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+
+[VIF 진단 - 통제변수 포함 모형]
+         variable       VIF
+     manage_trust  1.077104
+             risk  1.200433
+safety_perception  1.261230
+           female  1.023261
+              age  1.022415
+      edu_college  7.413164
+         edu_grad 22.269744
+           income  9.968061
+
+
+[핵심 계수 비교표]
+변수                          Model1 β   Model2 β   Model3 z   Model2 p
+-----------------------------------------------------------------
+manage_trust                  0.7121     0.7131    25.1632     0.0000
+risk                         -0.0586    -0.0637    -2.7803     0.0053
+safety_perception            -0.1916    -0.1906    -5.3084     0.0000
+
+[통제변수 계수]
+female                        0.0743  p=0.0248
+age                          -0.0022  p=0.1377
+edu_college                   0.0677  p=0.4469
+edu_grad                      0.0783  p=0.6161
+income                       -0.0352  p=0.5899
+
+Model1 R²=0.5043  Adj.R²=0.5030
+Model2 R²=0.5083  Adj.R²=0.5047
+Model2 vs Model1 ΔR²=0.0040
