@@ -1,34 +1,20 @@
 # 논의 (Discussion)
 
-*적용 에이전트: discussion_writer + results_interpreter + privacy_regulation_analyst + contribution_guardian + reviewer_ssci + structure_editor*
-*참조: discussion_template.md / project_summary.md / contribution_statement.md / theoretical_positioning.md / empirical_findings.md / reviewer_risks.md*
-
----
-
-> **논의 섹션 작성 원칙 (내부)**
-> - 분석결과의 기계적 반복 없음 — 결과가 *이론적으로 무엇을 의미하는지*를 설명
-> - 거버넌스 정당성 테제를 끝까지 유지 — "신뢰가 중요하다"로 희석되지 않을 것
-> - 이론적 기여는 privacy calculus·generic trust model·descriptive governance analysis와의 차별성으로 명시화
-> - 한계는 투명하게 인정하되 기여를 붕괴시키지 않을 것
-> - reviewer_ssci 관점: "왜 이것이 이론적으로 중요한가?" 에 답하지 못하는 문단은 삭제
-
----
-
 ## 5. 논의
 
 ### 5.1 핵심 발견의 이론적 요약
 
-본 연구는 재난 개인정보 거버넌스 맥락에서 사후규제 체계의 정당성 생산 역량을 실증적으로 검토함으로써, 네 가지 이론적으로 수렴하는 구조적 발견을 확인하였다.
+본 연구는 재난 개인정보 거버넌스 맥락에서 하이브리드 거버넌스 조건 하에 개인들이 형성하는 정당성 인식 패턴을 분석함으로써, 세 가지 주요 가설에 대한 유의한 경험적 확인, 하나의 방향성 부합 패턴, 그리고 이론적으로 의미 있는 탐색적 역설 패턴을 도출하였다. 이 발견들은 한국 일반 시민 개인 수준 설문 자료(N=1,094)에 기반하며, 분석 단위가 개인 수준에 위치한다는 점—거버넌스 시스템의 구조적 속성을 직접 측정한 것이 아님—을 분석 범위의 경계로 명시한다.
 
-첫째, 관리신뢰—기관의 구체적 역량에 대한 공중의 관계적 신뢰—는 정책수용성의 압도적 연관 요인으로 나타났으며(β=0.713***, 부트스트랩 총효과 0.713), 이 연관성은 형식적 안전관리 신호의 효과를 명확히 능가한다. 거버넌스 정당성의 실질적 기반이 형식적 성과 시연이 아닌 관계적으로 구축된 신뢰 자원에 있다는 이론적 예측을 지지한다(H1).
+첫째, 관리신뢰—기관의 구체적 역량에 대한 공중의 관계적 신뢰—는 정책수용성의 압도적 연관 요인으로 나타났으며(β=0.713\*\*\*, 부트스트랩 총효과 0.713), 이 연관성은 형식적 안전관리 신호의 효과를 명확히 능가한다. 거버넌스 정당성의 실질적 기반이 형식적 성과 시연이 아닌 관계적으로 구축된 신뢰 자원에 있다는 이론적 예측을 지지한다(H1).
 
-둘째, 형식적 안전관리 신호(안전인식)는 정책수용성과 부적으로 연관되며(β=−0.191***), 이것은 형식적 거버넌스 성과 시연이 정당성 확보로 자동 전환된다는 사후규제의 핵심 전제가 위험사회 조건 하에서 구조적으로 성립하지 않을 수 있음을 시사한다(H2).
+둘째, 위험인식은 정책수용성과 유의미한 부적 연관성을 나타냈다(β=−0.064**, HC3 z=−2.61**). 이는 불확실성에 대한 개인의 인식이 정당성 수용과 부적으로 연관된다는 이론적 예측을 지지한다(H2 지지). 아울러, 이론적으로 사전에 도출되지 않은 탐색적 발견으로서, 형식적 안전관리 시스템 인식(안전인식) 역시 정책수용성과 예상치 못하게 부적으로 연관되었으며(β=−0.191\*\*\*), 이 패턴은 하이브리드 거버넌스 맥락에서 형식적 거버넌스 신호와 개인의 정당성 인식 연관이 단선적이지 않을 수 있음을 탐색적으로 시사한다.
 
-셋째, 안전인식은 확산적 제도적 신뢰와 강한 부적 연관성을 나타냈으며(β=−0.778***), 이 경로를 경유한 부트스트랩 간접효과(−0.111 [95% CI: −0.158, −0.067])는 사후규제의 제도적 역설—형식적 안전관리 신호가 확산적 제도 신뢰를 억제하는 구조—을 통계적으로 확인한다(H5).
+셋째, 안전관리 시스템 인식(안전인식)은 확산적 제도적 신뢰와 강한 부적 연관성을 나타냈으며(β=−0.778\*\*\*), 이 경로를 경유한 부트스트랩 간접효과(−0.111 [95% CI: −0.158, −0.067])는 통계적으로 유의하다(추가 탐색적 관찰). 이 패턴은 이론적으로 사전에 명시적으로 도출된 것이 아니라 분석 과정에서 발견된 예상치 못한 결과이며, 아래 5.2.1절에서 이론적 해석을 제공한다. 다만 안전인식이 이분 단일 문항으로 측정된 한계를 감안하여 이 패턴은 탐색적 관찰 수준으로 해석한다.
 
-넷째, 위험인식이 높은 조건에서 관리신뢰의 정당성 수권 효과가 증폭된다는 상호작용 패턴(β=0.084**, 단순 기울기: 저위험 0.643 vs. 고위험 0.776)은, 불확실성이 증가할수록 관계적 신뢰가 형식적 거버넌스 신호를 대체하는 신뢰 대체 메커니즘을 지지한다(H4).
+넷째, 위험인식이 높은 조건에서 관리신뢰의 정당성 수권 효과가 증폭된다는 상호작용 패턴(β=0.084\*\*, 단순 기울기: 저위험 0.643 vs. 고위험 0.776)은, 불확실성이 증가할수록 관계적 신뢰가 형식적 거버넌스 신호를 대체하는 신뢰 대체 메커니즘을 지지한다(H4).
 
-이 네 발견은 각각 독립적인 통계적 발견이 아니라, 단일한 이론적 구조를 공유하는 증거들이다: 재귀적 근대화가 진행된 위험사회 조건에서, 거버넌스 정당성의 실질적 기반은 형식적 성과 시연으로부터 관계적으로 구축된 신뢰 자원으로 구조적으로 이전되며, 형식적 안전관리 신호는 그 이전을 촉진하지 않고 오히려 역행하는 제도적 역설을 내포한다.
+이 결과들은 각각 독립적인 통계적 발견이 아니라, 단일한 이론적 논리를 공유하는 수렴적 증거들이다: 재귀적 근대화가 진행된 위험사회 조건에서, 개인의 정책수용성 인식은 형식적 성과 시연보다 관계적으로 구축된 신뢰 자원과 더 강하게 연관되며(H1 지지, β=0.713\*\*\*; H3 지지, 간접효과 CI [0.023, 0.058]), 형식적 안전관리 신호 인식은 확산적 제도 신뢰와 역설적으로 부적으로 연관되는 이론적으로 의미 있는 탐색적 패턴이 추가로 관찰되었다. 분석 단위는 일관되게 개인 수준에 위치하며, 거버넌스 시스템 수준의 구조적 명제에 대한 직접 증거로 해석하는 것이 분석적으로 정당화되지 않는다는 점을 명확히 한다.
 
 ---
 
@@ -36,27 +22,29 @@
 
 #### 5.2.1 위험사회론의 거버넌스 정당성 이론으로의 적용
 
-본 연구의 핵심 이론적 기여는 Beck(1992)의 위험사회론을 단순한 사회이론적 배경으로 인용하는 수준을 넘어, 거버넌스 정당성 생산의 구조적 조건에 관한 검증 가능한 명제들을 도출하는 이론적 발생 기제(theory-generating mechanism)로 활용하였다는 점에 있다.
+본 연구의 핵심 이론적 기여는 Beck(1992)의 위험사회론을 단순한 사회이론적 배경으로 인용하는 수준을 넘어, 거버넌스 정당성 생산의 구조적 조건에 관한 검증 가능한 명제들을 도출하는 이론적 발생 기제(theory-generating mechanism)로 활용하고, 개인 수준 설문 자료를 통해 이 명제들과 방향적으로 부합하는 탐색적 패턴을 확인하였다는 점에 있다.
 
 재귀적 근대화 테제는 현대 거버넌스 시스템이 직면하는 독특한 정당성 문제를 구조적으로 설명한다. 거버넌스 기관들이 자신이 관리하는 위험을 생산하는 기술·경제 시스템에 내재되어 있다는 공중의 자각이 심화될수록, 형식적 전문성과 기술적 역량 시연은 정당성 생산 기제로서의 효율을 체계적으로 상실한다(Wynne, 1992). 본 연구의 발견—형식적 안전관리 신호의 부적 연관성—은 이 이론적 예측의 경험적 표현이다. 재난이라는 거버넌스 조건은 재귀적 근대화의 정당성 역학이 가장 극적으로 작동하는 현장을 제공한다: 위험은 즉각적이고 가시적이며, 거버넌스 기관에 대한 의존은 불가피하고, 형식적 안전관리 신호의 진정성에 대한 의심은 최고조에 달한다.
 
 이 발견은 위험사회론이 거버넌스 연구에 기여할 수 있는 방식에 대한 이론적 함의를 가진다. 기존의 많은 위험사회론 적용 연구들은 이 이론을 현대사회의 불확실성 증가를 기술하는 거시 서사로 활용하는 데 그쳐왔다. 본 연구는 재귀적 근대화의 이론적 메커니즘—형식적 권위의 탈정당화, 신뢰 자원으로의 정당성 이전, 위험 조건에서의 신뢰 대체—이 거버넌스 정당성 변수들 간 연관성 패턴으로 직접 검증될 수 있음을 보여줌으로써, 위험사회론의 중범위 이론화(middle-range theorization)를 위한 경험적 기반을 확장한다.
 
+**안전관리 시스템 인식의 역설적 부적 연관 패턴: 성찰성 역설의 이론적 해석.** 본 연구에서 분석적으로 가장 주목할 만한 발견은 안전관리 시스템 인식(안전인식)이 확산적 제도적 신뢰와 강한 부적 연관성을 나타낸다는 것이다(β=−0.778\*\*\*). 이 패턴은 이론 섹션(2.4절)에서 이미 이론적 가능성으로 주의를 환기한 바 있다: Wynne(1992)의 '성찰성의 역설(paradox of reflexivity)'이 시사하는 방향과 부합한다. 재귀적 근대화 조건 하에서(Beck, 1992), 특정 안전관리 역량의 가시화는 그 역량이 완전하다는 확신을 강화하기보다 관리 체계가 다루는 불확실성의 범위와 한계를 함께 드러낼 수 있다. 이 인식론적 메커니즘이 작동하는 조건에서, 안전관리 시스템에 대한 인식은 비특정적 확산 신뢰—Luhmann(1979)적 의미의 재귀적 의심 유예 위에 구축된 신뢰—를 강화하기보다 약화시키는 방향으로 연관될 수 있다. 이 패턴은 형식적 가설로 사전에 정식화되지 않았으나, Wynne과 Beck의 이론적 논리에서 도출 가능한 방향이 경험적 자료와 부합하는 탐색적 발견으로 해석된다. 안전인식이 이분 단일 문항으로 측정된 측정상의 한계, 그리고 선택 편향(부정적 경험을 통해 안전관리 시스템을 인식한 응답자)의 가능성을 감안하여, 이 해석은 후속 종단·실험 연구를 통한 검증이 요구되는 탐색적 수준의 발견이다.
+
 #### 5.2.2 사후규제 거버넌스 이론에 대한 함의
 
 본 연구는 사후규제 거버넌스 이론에 대한 구체적인 이론적 도전을 제기한다. Hood & Rothstein(2001), Black(2010), Rothstein et al.(2006)은 사후규제가 준수를 생산하도록 설계된 제도적 구조임을 분석하였으나, 이 연구들은 사후규제가 준수와는 구별되는 거버넌스 정당성—공중의 실질적 수용과 신뢰—을 어떤 조건에서 생산하는지, 또는 생산하지 못하는지에 대해 충분히 다루지 않았다.
 
-본 연구의 발견은 이 공백을 메운다. 사후규제 체계의 핵심 정당화 메커니즘—성과 기반 책임성, 감사 기반 감독, 절차적 준수 인증—은 거버넌스 정당성 지표로서의 정책수용성과 오히려 부적으로 연관되며, 이 패턴은 명세화 독립적으로 재현된다. 이것이 의미하는 바는 명확하다: 사후규제 체계는 **준수를 생산하는 역량과 정당성을 생산하는 역량 사이의 구조적 간극**을 내재하고 있으며, 이 간극은 재귀적 근대화가 진행된 사회에서 체계적으로 확대된다. 이 구조적 간극이 본 연구가 명명하는 '사후규제의 구조적 정당성 결핍(structural legitimacy deficit of post-regulation)'이다.
+본 연구의 탐색적 발견은 이 공백에 대한 경험적 단서를 제공한다. 형식적 안전관리 시스템 인식(안전인식)이 정책수용성 및 제도적 신뢰와 부적으로 연관되는 패턴은 명세화 독립적으로 재현되며, 이는 사후규제 체계의 핵심 정당화 메커니즘—성과 기반 책임성, 감사 기반 감독, 절차적 준수 인증—이 개인의 정당성 인식 형성에 미치는 효과가 단선적이지 않을 수 있다는 탐색적 함의를 제공한다. 이것은 사후규제 체계가 준수(compliance)를 생산하는 경로와 개인의 거버넌스 정당성 인식을 형성하는 경로 사이에 긴장(tension)이 존재할 수 있음을 탐색적으로 시사하며, 이 긴장이 재귀적 근대화가 진행된 조건에서 심화될 수 있다는 이론적 가능성을 제기한다.
 
 이것은 Luhmann(1979)의 이론적 통찰을 사후규제 거버넌스 문맥에서 확장하는 것이기도 하다. Luhmann은 신뢰가 복잡성을 축소하는 기제임을 강조하였다: 신뢰는 불확실성을 완전히 해소하지 않고도 행위를 가능하게 하는 사회적 자원이다. 사후규제 체계가 형식적 성과 시연을 통해 불확실성의 '해소'를 시도하는 반면, 관계적으로 구축된 관리신뢰는 불확실성이 해소되지 않은 상태에서도 행위 가능성—정책수용성—을 유지하는 복잡성 축소 기제로 기능한다. 이 이론적 구별이 사후규제 체계의 구조적 취약성을 설명한다.
 
-**협력적 거버넌스 문헌과의 이론적 위치 조정:** 관계적 신뢰가 거버넌스 정당성의 핵심 자원이라는 명제는, 협력적 거버넌스(collaborative governance) 문헌이 이미 제시한 주장과 중첩되는 영역을 갖는다. Ansell & Gash(2008)는 다중 이해관계자 협력 과정에서 신뢰 구축이 거버넌스 성과의 핵심 선행 조건임을 이론화하였으며, Tyler(2006)는 절차적 공정성이 제도 신뢰와 준수를 생산하는 경로를 분석하였다. 이 문헌들은 관계적 신뢰의 중요성을 거버넌스 이론의 수준에서 이미 인식하고 있다. 본 연구의 이론적 기여는 관계적 신뢰가 중요하다는 명제 자체에 있지 않다. 기여는 더 구체적이고 구별되는 층위에 있다: 사후규제라는 **특정 제도적 구조**가 형식적 성과 시연을 통해 정당성을 생산하려 할 때 발생하는 **역설적 실패 메커니즘**의 경험적 규명이다. 즉, 왜 협력적 거버넌스 문헌이 처방하는 "신뢰 구축"이 사후규제 체계 내에서 형식적 거버넌스 신호의 역설적 효과에 의해 구조적으로 저해되는지—그 기제적 설명—을 경험적으로 제공하는 것이 본 연구의 고유한 기여이다.
+**협력적 거버넌스 문헌과의 이론적 위치 조정:** 관계적 신뢰가 거버넌스 정당성의 핵심 자원이라는 명제는, 협력적 거버넌스(collaborative governance) 문헌이 이미 제시한 주장과 중첩되는 영역을 갖는다. Ansell & Gash(2008)는 다중 이해관계자 협력 과정에서 신뢰 구축이 거버넌스 성과의 핵심 선행 조건임을 이론화하였으며, Tyler(2006)는 절차적 공정성이 제도 신뢰와 준수를 생산하는 경로를 분석하였다. 이 문헌들은 관계적 신뢰의 중요성을 거버넌스 이론의 수준에서 이미 인식하고 있다. 본 연구의 이론적 기여는 관계적 신뢰가 중요하다는 명제 자체에 있지 않다. 기여는 더 구체적이고 구별되는 층위에 있다: 사후규제라는 **특정 제도적 구조** 맥락에서 형식적 성과 시연과 개인 정당성 인식 간 연관이 예상과 달리 역설적 방향으로 나타날 수 있음을 시사하는 **탐색적 경험적 단서 제공**이다. 즉, 하이브리드 거버넌스 조건에서 형식적 안전 신호와 개인 수준 정당성 인식 연관이 단선적이지 않을 수 있다는 이 탐색적 패턴이 협력적 거버넌스 문헌에 대한 본 연구의 탐색적 기여이다.
 
 #### 5.2.3 기존 프라이버시 거버넌스 연구와의 이론적 차별성
 
 본 연구는 개인정보 거버넌스 연구에서 지배적인 privacy calculus 접근(Dinev & Hart, 2006; Smith, Dinev & Xu, 2011)과 두 가지 핵심 차원에서 구별된다.
 
-첫째, 분석 단위의 전환이다. Privacy calculus 연구는 개인이 정보 제공의 위험과 편익을 계산하는 과정에 초점을 둔다. 이 접근에서 신뢰는 개인의 심리적 상태—계산의 변수—이며, 정책수용성은 개인 태도의 집합이다. 본 연구는 정책수용성을 거버넌스 시스템이 공중으로부터 정당성을 인정받는 행태적 지표로 재정의하고(Saurugger, 2010), 신뢰를 거버넌스 시스템이 배치하는 제도적 자원으로 이론화한다. 이 분석 단위의 전환은 동일한 통계적 발견이 완전히 다른 이론적 의미를 갖게 만든다: 관리신뢰의 강한 연관성은 개인 선호의 결정 요인이 아닌, 거버넌스 시스템의 정당성 생산 역량의 구조적 지표이다.
+첫째, 해석 프레임의 전환이다. Privacy calculus 연구는 개인이 정보 제공의 위험과 편익을 계산하는 과정에 초점을 두며, 신뢰를 개인의 심리적 상태—계산의 변수—로 취급한다. 분석 단위는 동일하게 개인에 머무르지만, 본 연구는 정책수용성을 단순한 개인 선호의 표현이 아닌 하이브리드 거버넌스 맥락에서 개인이 거버넌스 기관의 권위를 정당한 것으로 인정하는 정당성 인식의 행태적 지표로 재해석한다(Saurugger, 2010). 이 해석 프레임의 전환은 동일한 개인 수준 통계적 발견이 다른 이론적 의미를 갖게 만든다: 관리신뢰의 강한 연관성(β=0.713\*\*\*)은 단순한 개인 선호의 결정 요인이 아닌, 하이브리드 거버넌스 맥락에서 개인의 정당성 인식 형성에 관계적 신뢰가 갖는 결정적 상대적 중요성을 경험적으로 확인해 준다.
 
 둘째, 설명 수준의 전환이다. 기존 신뢰 연구의 주류는 개인이 지각하는 기관의 능력, 성실성, 자비심을 신뢰의 결정 요인으로 제시한다(Mayer et al., 1995). 이 연구들은 신뢰를 왜 개인이 갖는가를 설명하나, 왜 특정 거버넌스 체계가 구조적으로 신뢰를 생산하지 못하는지는 설명하지 못한다. 본 연구는 이 설명 수준을 거버넌스 시스템의 제도적 설계로 전환함으로써, 신뢰의 개인적 결정 요인에서 신뢰의 구조적 생산 조건으로 연구 문제를 이동시킨다.
 
@@ -72,15 +60,15 @@
 
 #### 5.3.2 플랫폼 거버넌스에 대한 이론적 유추
 
-*주의: 이 절의 논의는 본 연구 데이터에서 직접 도출되는 경험적 함의가 아닌, 이론적 유추(theoretical analogy)이다. 플랫폼 거버넌스의 구조적 정당성 결핍에 관한 경험적 검증은 별도 설계의 후속 연구에서 이루어져야 한다.*
+_주의: 이 절의 논의는 본 연구 데이터에서 직접 도출되는 경험적 함의가 아닌, 이론적 유추(theoretical analogy)이다. 플랫폼 거버넌스의 구조적 정당성 결핍에 관한 경험적 검증은 별도 설계의 후속 연구에서 이루어져야 한다._
 
-플랫폼 기업이 재난 대응 데이터 거버넌스의 핵심 행위자로 부상한 현실(Mossberger et al., 2021)을 고려할 때, 본 연구의 이론적 틀은 플랫폼 거버넌스 연구에 대한 이론적 가설을 생성하는 데 유용한 분석 틀을 제공할 수 있다. 플랫폼은 구조적으로 사후규제의 산물이다: 알고리즘 감사, 데이터 보호 인증, 투명성 보고서 등 플랫폼 거버넌스의 주요 도구들은 모두 성과 기반 사후규제 논리에 기반한다. 본 연구가 제시하는 사후규제의 구조적 정당성 결핍 테제가 플랫폼 맥락에서도 적용될 수 있는지—즉, 형식적 거버넌스 신호가 플랫폼 거버넌스 수용성과도 부적으로 연관되는지—는 이론적으로 흥미로운 가설이나, 본 연구 데이터로는 직접 검증할 수 없다.
+플랫폼 기업이 재난 대응 데이터 거버넌스의 핵심 행위자로 부상한 현실(Mossberger et al., 2013)을 고려할 때, 본 연구의 이론적 틀은 플랫폼 거버넌스 연구에 대한 이론적 가설을 생성하는 데 유용한 분석 틀을 제공할 수 있다. 플랫폼은 구조적으로 사후규제의 산물이다: 알고리즘 감사, 데이터 보호 인증, 투명성 보고서 등 플랫폼 거버넌스의 주요 도구들은 모두 성과 기반 사후규제 논리에 기반한다. 본 연구가 탐색적으로 관찰한 사후규제 맥락에서의 형식적 안전 신호와 정당성 인식 간 정당성 긴장 패턴이 플랫폼 맥락에서도 나타나는지—즉, 형식적 거버넌스 신호가 플랫폼 거버넌스 수용성과도 부적으로 연관되는지—는 이론적으로 흥미로운 가설이나, 본 연구 데이터로는 직접 검증할 수 없다.
 
 다만 이론적 유추의 단서로서, 투명성 보고서 발간이나 독립 감사 결과의 공개에 대한 공중 반응 연구(Acquisti, Brandimarte & Loewenstein, 2015)에서 관찰되는 패턴들—형식적 정보 공개가 신뢰 향상으로 자동 전환되지 않는 현실—은 본 연구의 이론적 예측과 방향이 부합하는 방증적 증거로 참조할 수 있다. 그러나 이러한 간접적 참조는 경험적 검증의 대체물이 아니다.
 
 #### 5.3.3 AI 데이터 거버넌스에 대한 이론적 유추
 
-*주의: 이 절 역시 이론적 유추의 수준이다. AI 거버넌스 맥락에서의 경험적 검증은 본 연구의 범위 밖에 있다.*
+_주의: 이 절 역시 이론적 유추의 수준이다. AI 거버넌스 맥락에서의 경험적 검증은 본 연구의 범위 밖에 있다._
 
 AI 시스템의 거버넌스—알고리즘 영향 평가, AI 감사, 설명가능성 요건—는 전형적인 사후규제 논리를 따른다: 성과 기반 책임성과 절차적 준수 인증을 통해 AI 활용의 정당성을 확보하려 한다. AI의 본질적 특성—결과의 예측 불가능성, 책임 귀속의 모호성, 데이터 편향의 불투명성—은 재귀적 근대화가 묘사하는 '제조된 불확실성'의 구조적 특성과 이론적 유사성을 갖는다. 이 유사성에 기반하여, AI 거버넌스가 설명가능성 요건 충족이나 감사 결과 공개라는 형식적 성과 시연만으로 공중의 정책수용성을 확보하려 할 때 구조적 한계에 직면할 수 있다는 가설을 이론적으로 도출할 수 있다. EU AI Act의 적합성 평가(conformity assessment) 및 고위험 AI 감사 체계(European Commission, 2021)의 정당성 생산 효과는, 본 연구가 제기하는 이론적 틀로 검증 가능한 경험적 질문이다—그러나 그 검증 자체는 별도 연구의 과제이다.
 
@@ -112,88 +100,69 @@ AI 시스템의 거버넌스—알고리즘 영향 평가, AI 감사, 설명가�
 
 **다섯째, 맥락 특수성의 한계.** 본 연구는 한국의 일반 국민 표본을 대상으로 하며, 인구통계 통제변수(성별, 연령, 교육, 소득)를 포함한 조건에서도 핵심 계수의 안정성이 확인되었다(ΔR²=.004). 그러나 통제변수의 설명력 기여가 미미하다는 사실은, 관찰된 패턴이 관찰된 인구통계 변수들을 넘어서는 미측정 맥락 변수(예: 지역별 거버넌스 경험, 기관별 신뢰 역사)의 영향을 받을 수 있음을 배제하지 않는다. 한국은 강력한 개인정보보호법 체계와 높은 디지털 거버넌스 발전 수준을 갖추는 동시에 행정 신뢰의 역사적 특수성을 지닌 맥락이므로, 상이한 규제 체계·거버넌스 문화·위험 조건을 가진 사회에서의 비교 연구가 필요하다.
 
-이러한 한계에도 불구하고, 본 연구의 방법론적 기여—다섯 가지 형식적 가설에 대한 일관된 방향성 증거(H1–H5), Preacher & Hayes(2008) 부트스트랩 간접효과 검증, 통제변수 포함 조건에서의 강건한 재현, 이론적으로 도출된 상호작용 패턴의 확인—는 사후규제의 구조적 정당성 결핍이라는 이론적 주장을 경험적으로 지지하는 충분한 근거를 제공한다.
+이러한 한계에도 불구하고, 본 연구의 방법론적 기여—네 가지 탐색적 가설에 대한 방향성 증거(H1–H4), 예상치 못한 안전인식 연관 패턴에 대한 추가 탐색적 관찰, Preacher & Hayes(2008) 부트스트랩 간접효과 검증, 통제변수 포함 조건에서의 강건한 재현, 이론적으로 도출된 상호작용 방향성 패턴의 확인—은 하이브리드 거버넌스 맥락에서 개인의 정당성 인식 패턴에 관한 이론적 가설의 탐색적 경험적 기반을 제공한다.
 
 ---
 
 ### 5.6 결론: 불확실성 거버넌스와 제도적 정당성의 구조적 조건
 
-본 연구는 재난 개인정보 거버넌스를 렌즈로 삼아, 위험사회 조건에서 사후규제 거버넌스 체계가 직면하는 구조적 정당성 문제를 이론화하고 실증하였다. 연구의 핵심 발견은 다음의 단일 명제로 요약된다: **재귀적 근대화가 진행된 위험사회 조건에서, 사후규제 거버넌스 체계의 형식적 성과 시연은 실질적 거버넌스 정당성—공중의 수용과 신뢰—을 자동적으로 생산하지 않으며, 관계적으로 구축된 신뢰 자원이 거버넌스 정당성의 실질적 기반을 구성한다.**
+**본 연구의 독창적 기여는 세 가지 요소의 이론적으로 의미 있는 결합에 있다.** 첫째, 재난 데이터라는 고위험·고불확실성 거버넌스 맥락—개인이 보호 대상인 동시에 감시 대상이 되는 독특한 제도적 삼중성—을 분석 현장으로 삼았다. 둘째, 형식적 안전관리 시스템 인식이 확산적 제도 신뢰와 역설적으로 부적으로 연관되는 패턴을 발견하였으며, 이 패턴을 Wynne(1992)의 성찰성 역설과 Beck(1992)의 재귀적 근대화론으로 이론적으로 해석하는 탐색적 경로를 열었다. 셋째, 감염병예방법(명령·통제)과 개인정보보호법(사후규제 책임성)이 공존하는 한국의 하이브리드 거버넌스 제도 구조 속에서 이 패턴을 실증적으로 검토하였다. 이 세 요소의 결합—재난 맥락 + 형식적 안전 신호의 역설 + 하이브리드 거버넌스—은 기존 privacy calculus 문헌, 정부 신뢰 연구, 사후규제 거버넌스 이론 어디에도 선례가 없으며, 이것이 본 연구가 거버넌스 정당성 이론에 기여하는 가장 핵심적인 이론적 실험이다.
+
+본 연구는 재난 개인정보 거버넌스를 분석 현장으로 삼아, 위험사회 조건에서 하이브리드 거버넌스 체계의 정당성 관련 반응 패턴을 이론적으로 틀지우고 탐색적으로 검토하였다. 연구의 핵심 발견은 다음의 탐색적 명제로 요약된다: **한국 재난 데이터 거버넌스 맥락에서, 관리신뢰로 측정된 관계적 신뢰 자원은 안전인식으로 측정된 형식적 안전관리 신호보다 정책수용성과 더 강하게 연관되며, 이 패턴은 재귀적 근대화 조건에서 형식적 성과 시연의 정당성 생산 효율이 제한됨을 예측하는 이론적 틀과 탐색적으로 부합한다.** 이 명제는 개인 수준 설문 자료에 기반한 탐색적 발견이며, 거버넌스 시스템의 구조적 속성에 대한 최종 주장이 아닌 후속 연구를 위한 이론적 가설의 경험적 기반을 제공하는 것으로 해석되어야 한다.
 
 이 명제의 이론적 함의는 특정 정책 영역을 넘어 현대 거버넌스 이론의 근본 문제와 연결된다. 민주주의 거버넌스 체계는 전통적으로 두 가지 정당성 원천—절차적 적법성(procedural legality)과 성과 기반 효과성(performance-based effectiveness)—에 의존해왔다. 사후규제는 이 두 원천을 결합한 제도적 해법으로 등장하였으나, 재귀적 근대화 조건은 이 두 원천 모두의 정당성 생산 효율을 체계적으로 약화시킨다.
 
-관계적으로 구축된 신뢰가 거버넌스 정당성의 중요한 자원이라는 명제는 협력적 거버넌스 문헌(Ansell & Gash, 2008)과 절차적 공정성 연구(Tyler, 2006)에서 이미 제시된 통찰을 공유한다. 그러나 본 연구의 고유한 기여는 이 통찰을 사후규제라는 **특정 제도적 구조**의 정당성 실패 메커니즘과 연결하는 데 있다. 즉, 사후규제 체계가 형식적 성과 시연을 통해 정당성을 생산하려 할 때 발생하는 역설—안전관리 신호의 가시화가 오히려 확산적 제도 신뢰를 억제하는 구조—을 경험적으로 규명함으로써, 기존 협력적 거버넌스 문헌이 처방하는 신뢰 구축이 왜 사후규제 맥락에서 구조적으로 저해되는지에 대한 기제적 설명을 제공한다. 이 기제적 설명—사후규제의 구조적 정당성 결핍과 신뢰 대체 메커니즘—이 본 연구가 거버넌스 정당성 이론에 추가하는 구체적 이론적 기여이다.
+관계적으로 구축된 신뢰가 거버넌스 정당성의 중요한 자원이라는 명제는 협력적 거버넌스 문헌(Ansell & Gash, 2008)과 절차적 공정성 연구(Tyler, 2006)에서 이미 제시된 통찰을 공유한다. 그러나 본 연구의 고유한 탐색적 기여는 이 통찰을 하이브리드 거버넌스라는 **특정 제도적 맥락**에서 개인 수준 인식 패턴으로 경험적으로 탐색하는 데 있다. 즉, 하이브리드 거버넌스 맥락에서 형식적 안전관리 인식과 개인의 정당성 인식 연관이 예상과 달리 부적으로 나타나는 패턴을 탐색적으로 관찰하고, 신뢰 대체 메커니즘 방향성을 탐색적으로 확인함으로써, 기존 협력적 거버넌스 문헌이 처방하는 신뢰 구축이 왜 하이브리드 거버넌스 맥락에서 복잡한 양상을 보이는지에 대한 탐색적 경험적 단서를 제공한다. 이 탐색적 발견—하이브리드 거버넌스 조건에서 개인 정당성 인식 형성의 비선형적 패턴과 신뢰 대체 가능성—이 본 연구가 거버넌스 정당성 연구에 제공하는 탐색적 이론적 기여이다.
 
-재난 거버넌스는 사후규제 체계의 구조적 정당성 결핍이 가장 선명하게 드러나는 분석 현장을 제공하지만, 사후규제 논리를 공유하는 플랫폼·AI 거버넌스에서도 유사한 구조적 역학이 이론적으로 예측된다. 이 확장 명제의 경험적 검증은 후속 연구의 과제이다. 불확실성이 내재된 현대 거버넌스 조건에서 공중의 실질적 정당성 인정을 확보하는 문제—사후규제 체계의 구조적 한계와 관계적 신뢰의 대체 기능—는 점점 더 많은 거버넌스 영역에서 중심 이론적 과제로 부상하고 있다. 본 연구는 재난 데이터 거버넌스 맥락에서 이 문제의 경험적 기초를 제공하고, 그 이론적 확장을 위한 분석 틀을 제시하고자 하였다.
-
----
-
-### [내부: reviewer_ssci 비판 전 최종 점검]
-
-**기여 희석 위험 점검 (contribution_guardian):**
-- ✓ "신뢰가 중요하다"로 끝나지 않음 — 사후규제의 구조적 정당성 결핍이라는 이론적 주장 유지
-- ✓ Beck 이론이 장식적 인용이 아닌 이론 발생 기제로 활용됨 설명
-- ✓ Privacy calculus와의 차별성이 분석 단위 전환 + 설명 수준 전환으로 명시화
-- ✓ 정책 함의가 "투명성 제고" 등 일반 권고가 아닌 거버넌스 정당성 설계 원칙으로 서술
-
-**reviewer_ssci 비판 선제 대응:**
-
-| 예상 지적 | 대응 위치 |
-|---------|---------|
-| "Beck 이론이 장식적" | 5.2.1 — 재귀적 근대화를 이론 발생 기제로 활용한 방식 명시, 중범위 이론화 기여 주장 |
-| "기여가 자명하다: trust matters" | 5.2.2 — 준수↔정당성 간극의 구조적 이론화, 5.2.3 — 분석 단위·설명 수준 전환 차별성 |
-| "일개 국가 사례, 일반화 불가" | 5.5 세 번째 한계에서 맥락 특수성 인정 + "구조적 조건 재현 비교연구 필요"로 향후 연구 방향화 |
-| "횡단면 자료, 인과 추론 불가" | 5.5 첫 번째 한계에서 인정, 그러나 기여를 거버넌스 정당성 동학의 방향성 패턴 확인으로 재정의 |
-| "정책 함의가 너무 포괄적" | 5.4 — 세 가지 구체적 설계 원칙으로 제시, 규제 개선 수준이 아닌 거버넌스 정당성 설계 논리 |
-| "플랫폼·AI 확장이 과잉 일반화" | 5.3.2–5.3.3 — 각 절 상단에 "이론적 유추" 명시 경고 추가, 본 데이터에서 직접 도출 불가임을 인정, 경험적 확인 요구 명시 |
-| "제3의 정당성 원천이 기존 협력적 거버넌스 문헌과 중복" | 5.6 — Ansell & Gash(2008), Tyler(2006)와의 중첩 인정; 기여를 존재 명제가 아닌 사후규제 맥락에서의 역설적 실패 기제 규명으로 재정의 |
+재난 거버넌스는 사후규제 체계의 정당성 관련 역학이 가장 선명하게 탐색될 수 있는 분석 현장을 제공하지만, 사후규제 논리를 공유하는 플랫폼·AI 거버넌스에서도 유사한 역학이 이론적으로 예측된다. 이 확장 명제의 경험적 검증은 후속 연구의 과제이다. 불확실성이 내재된 현대 거버넌스 조건에서 공중의 실질적 정당성 인정을 확보하는 문제—사후규제 체계의 한계 가능성과 관계적 신뢰의 대체적 역할—는 점점 더 많은 거버넌스 영역에서 중심 이론적 과제로 부상하고 있다. 본 연구는 한국 재난 데이터 거버넌스 맥락에서 이 문제의 탐색적 경험적 기초를 제공하고, 그 이론적 확장을 위한 분석 틀을 제시하고자 하였다. 이 탐색적 발견이 후속 연구—비교 사례, 종단 설계, 실험적 접근—를 통해 검증되고 정교화될 때, 사후규제 거버넌스의 정당성 생산 조건에 관한 보다 확고한 이론적 기반이 마련될 수 있을 것이다.
 
 ---
 
 ### 참고문헌 (5절)
 
-Acquisti, A., Brandimarte, L., & Loewenstein, G. (2015). Privacy and human behavior in the age of information. *Science, 347*(6221), 509–514.
+Acquisti, A., Brandimarte, L., & Loewenstein, G. (2015). Privacy and human behavior in the age of information. _Science, 347_(6221), 509–514.
 
-Ansell, C., & Gash, A. (2008). Collaborative governance in theory and practice. *Journal of Public Administration Research and Theory, 18*(4), 543–571.
+Ansell, C., & Gash, A. (2008). Collaborative governance in theory and practice. _Journal of Public Administration Research and Theory, 18_(4), 543–571.
 
-Baldwin, R., Cave, M., & Lodge, M. (2012). *Understanding regulation: Theory, strategy, and practice* (2nd ed.). Oxford University Press.
+Baldwin, R., Cave, M., & Lodge, M. (2012). _Understanding regulation: Theory, strategy, and practice_ (2nd ed.). Oxford University Press.
 
-Beck, U. (1992). *Risk society: Towards a new modernity*. Sage.
+Beck, U. (1992). _Risk society: Towards a new modernity_. Sage.
 
-Black, J. (2010). Restructuring global and EU financial regulation: Character, capacities, and learning. In *The financial crisis and the regulation of finance* (pp. 3–30). Edward Elgar.
+Black, J. (2010). Risk-based regulation: Choices, practices and lessons being learnt. In OECD (Ed.), Risk and regulatory policy: Improving the governance of risk (pp. 185–224). OECD Publishing.
 
-Braithwaite, J. (2002). *Restorative justice and responsive regulation*. Oxford University Press.
+Braithwaite, J. (2002). _Restorative justice and responsive regulation_. Oxford University Press.
 
-Citrin, J. (1974). Comment: The political relevance of trust in government. *American Political Science Review, 68*(3), 973–988.
+Citrin, J. (1974). Comment: The political relevance of trust in government. _American Political Science Review, 68_(3), 973–988.
 
-Dinev, T., & Hart, P. (2006). An extended privacy calculus model for e-commerce transactions. *Information Systems Research, 17*(1), 61–80.
+Dinev, T., & Hart, P. (2006). An extended privacy calculus model for e-commerce transactions. _Information Systems Research, 17_(1), 61–80.
 
-European Commission. (2021). *Proposal for a regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence*. COM/2021/206.
+European Commission. (2021). _Proposal for a regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence_. COM/2021/206.
 
-Giddens, A. (1990). *The consequences of modernity*. Stanford University Press.
+Giddens, A. (1990). _The consequences of modernity_. Stanford University Press.
 
-Hood, C., & Rothstein, H. (2001). Risk regulation under pressure: Problem solving or blame shifting? *Administration & Society, 33*(1), 21–53.
+Hood, C., & Rothstein, H. (2001). Risk regulation under pressure: Problem solving or blame shifting? _Administration & Society, 33_(1), 21–53.
 
-Kitchin, R. (2014). *The data revolution: Big data, open data, data infrastructures and their consequences*. Sage.
+Kitchin, R. (2014). _The data revolution: Big data, open data, data infrastructures and their consequences_. Sage.
 
-Luhmann, N. (1979). *Trust and power*. Wiley.
+Luhmann, N. (1979). _Trust and power_. Wiley.
 
-Mayer, R. C., Davis, J. H., & Schoorman, F. D. (1995). An integrative model of organizational trust. *Academy of Management Review, 20*(3), 709–734.
+Mayer, R. C., Davis, J. H., & Schoorman, F. D. (1995). An integrative model of organizational trust. _Academy of Management Review, 20_(3), 709–734.
 
-Mossberger, K., Wu, Y., & Crawford, J. (2021). Connecting citizens and local governments? Social media and interactivity in major U.S. cities. *Government Information Quarterly, 38*(1), 101544.
+Mossberger, K., Wu, Y., & Crawford, J. (2013). Connecting citizens and local governments? Social media and interactivity in major US cities. _Government Information Quarterly, 30_(4), 351–358.
 
-Newton, K. (2001). Trust, social capital, civil society, and democracy. *International Political Science Review, 22*(2), 201–214.
+Newton, K. (2001). Trust, social capital, civil society, and democracy. _International Political Science Review, 22_(2), 201–214.
 
-Rothstein, H., Huber, M., & Gaskell, G. (2006). A theory of risk colonization: The spiralling regulatory logics of societal and institutional risk. *Economy and Society, 35*(1), 91–112.
+Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models. _Behavior Research Methods, 40_(3), 879–891.
 
-Saurugger, S. (2010). The social construction of the participatory turn: The emergence of a norm in the European Union. *European Journal of Political Research, 49*(4), 471–495.
+Rothstein, H., Huber, M., & Gaskell, G. (2006). A theory of risk colonization: The spiralling regulatory logics of societal and institutional risk. _Economy and Society, 35_(1), 91–112.
 
-Slovic, P. (1999). Trust, emotion, sex, politics, and science: Surveying the risk-assessment battlefield. *Risk Analysis, 19*(4), 689–701.
+Saurugger, S. (2010). The social construction of the participatory turn: The emergence of a norm in the European Union. _European Journal of Political Research, 49_(4), 471–495.
 
-Smith, H. J., Dinev, T., & Xu, H. (2011). Information privacy research: An interdisciplinary review. *MIS Quarterly, 35*(4), 989–1016.
+Slovic, P. (1999). Trust, emotion, sex, politics, and science: Surveying the risk-assessment battlefield. _Risk Analysis, 19_(4), 689–701.
 
-Tyler, T. R. (2006). *Why people obey the law*. Princeton University Press.
+Smith, H. J., Dinev, T., & Xu, H. (2011). Information privacy research: An interdisciplinary review. _MIS Quarterly, 35_(4), 989–1016.
 
-Wynne, B. (1992). Misunderstood misunderstanding: Social identities and public uptake of science. *Public Understanding of Science, 1*(3), 281–304.
+Tyler, T. R. (2006). _Why people obey the law_. Princeton University Press.
 
-Zuboff, S. (2019). *The age of surveillance capitalism: The fight for a human future at the new frontier of power*. PublicAffairs.
+Wynne, B. (1992). Misunderstood misunderstanding: Social identities and public uptake of science. _Public Understanding of Science, 1_(3), 281–304.
+
