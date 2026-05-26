@@ -3,7 +3,7 @@ import statsmodels.api as sm
 
 df = pd.read_csv("../clean/people_clean.csv")
 
-X = df[['manage_trust','risk','safety_perception']]
+X = df[['manage_trust','risk','safe_management']]
 X = sm.add_constant(X)
 y = df['consent']
 

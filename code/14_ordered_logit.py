@@ -5,7 +5,7 @@ df = pd.read_csv("../clean/people_clean.csv")
 
 model = OrderedModel(
     df['consent'],
-    df[['manage_trust','risk','safety_perception']],
+    df[['manage_trust','risk','safe_management']],
     distr='logit'
 )
 

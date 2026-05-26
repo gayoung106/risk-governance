@@ -1,4 +1,12 @@
-people_mean: 1.5293
-worker_mean: 3.5149
-t-value: -52.5073
-p-value: 0.0000000000
+﻿Worker and general public descriptive comparison
+================================================
+
+Status: non-inferential descriptive note only.
+
+The general-public safe_management variable and the worker safety measure are not on comparable scales. Do not interpret an inferential or direct mean difference across these variables.
+
+General public safe_management mean: 0.4707
+Worker safety mean: 3.5149
+
+No inferential comparison is reported.
+

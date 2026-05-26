@@ -111,7 +111,11 @@ if risk_cols:
     people_df['risk'] = people_df[risk_cols].mean(axis=1)
 
 people_df['trust'] = people_df[trust_col]
-people_df['safety_perception'] = people_df[safety_col]
+
+# q25 raw coding is 1=Yes (managed safely), 2=No (not managed safely).
+# Use a positive-direction dummy for interpretation: 1=safe management perceived, 0=not perceived.
+people_df['safe_management'] = people_df[safety_col].map({1: 1.0, 2: 0.0})
+people_df['safety_perception'] = people_df['safe_management']  # legacy alias, recoded positive direction
 
 print(" PEOPLE 변수 생성 완료")
 
@@ -156,7 +160,7 @@ print(" clean 폴더 저장")
 # 결과 확인 출력
 # -------------------------
 print("\n PEOPLE sample")
-print(people_df[['consent','manage_trust','risk','trust','safety_perception']].head())
+print(people_df[['consent','manage_trust','risk','trust','safe_management','safety_perception']].head())
 
 print("\n WORKER sample")
 print(worker_df[['management','safety']].head())

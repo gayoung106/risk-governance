@@ -6,8 +6,8 @@
 - 통제변수 포함 버전과 비교
 - 세 가지 간접 경로:
   (a) manage_trust → trust → consent  [핵심 매개 경로]
-  (b) manage_trust → safety_perception → trust → consent  [역설 경로]
-  (c) safety_perception → trust → consent  [사후규제 역설 직접 경로]
+  (b) manage_trust → safe_management → trust → consent  [안전관리 경로]
+  (c) safe_management → trust → consent  [안전관리 긍정 인식 경로]
 """
 
 import pandas as pd
@@ -28,7 +28,7 @@ df['edu_grad'] = (df['tdq4'] == 3).astype(float)
 df['income'] = df['dq4']
 
 controls = ['female', 'age', 'edu_college', 'edu_grad', 'income']
-vars_needed = ['consent', 'manage_trust', 'risk', 'safety_perception', 'trust'] + controls
+vars_needed = ['consent', 'manage_trust', 'risk', 'safe_management', 'trust'] + controls
 analysis_df = df[vars_needed].dropna().reset_index(drop=True)
 n = len(analysis_df)
 print(f"분석 N = {n}")
@@ -40,19 +40,19 @@ def get_indirect_effects(data):
     """
     Baron-Kenny 3단계 구조에서 간접효과 계산
     간접효과 1: manage_trust → trust → consent (a1 * b1)
-    간접효과 2: safety_perception → trust → consent (a2 * b1)
+    간접효과 2: safe_management → trust → consent (a2 * b1)
     """
-    # Step 2: M(trust) = f(manage_trust, safety_perception, risk, controls)
-    Xm_cols = ['manage_trust', 'safety_perception', 'risk'] + controls
+    # Step 2: M(trust) = f(manage_trust, safe_management, risk, controls)
+    Xm_cols = ['manage_trust', 'safe_management', 'risk'] + controls
     Xm = sm.add_constant(data[Xm_cols])
     Ym = data['trust']
     m2 = sm.OLS(Ym, Xm).fit()
 
     a1 = m2.params['manage_trust']        # manage_trust → trust 경로 계수
-    a2 = m2.params['safety_perception']   # safety_perception → trust 경로 계수
+    a2 = m2.params['safe_management']   # safe_management → trust 경로 계수
 
-    # Step 3: consent = f(manage_trust, trust, safety_perception, risk, controls)
-    Xy_cols = ['manage_trust', 'trust', 'safety_perception', 'risk'] + controls
+    # Step 3: consent = f(manage_trust, trust, safe_management, risk, controls)
+    Xy_cols = ['manage_trust', 'trust', 'safe_management', 'risk'] + controls
     Xy = sm.add_constant(data[Xy_cols])
     Yy = data['consent']
     m3 = sm.OLS(Yy, Xy).fit()
@@ -60,7 +60,7 @@ def get_indirect_effects(data):
     b1 = m3.params['trust']               # trust → consent 경로 계수
 
     indirect1 = a1 * b1   # manage_trust의 간접효과 (trust 경유)
-    indirect2 = a2 * b1   # safety_perception의 간접효과 (trust 경유)
+    indirect2 = a2 * b1   # safe_management의 간접효과 (trust 경유)
 
     # manage_trust 직접효과
     direct_mt = m3.params['manage_trust']
@@ -115,16 +115,16 @@ sig_ind2 = "유의 (95% CI 0 불포함)" if not (ci_ind2[0] <= 0 <= ci_ind2[1]) 
 # ─────────────────────────────────────────────────────────────
 # 3단계 상세 회귀 결과 (원 데이터, 통제변수 포함)
 # ─────────────────────────────────────────────────────────────
-# Step 1: manage_trust → safety_perception
+# Step 1: manage_trust → safe_management
 X1 = sm.add_constant(analysis_df[['manage_trust', 'risk'] + controls])
-m_step1 = sm.OLS(analysis_df['safety_perception'], X1).fit()
+m_step1 = sm.OLS(analysis_df['safe_management'], X1).fit()
 
-# Step 2: trust = f(manage_trust, safety_perception, risk, controls)
-X2 = sm.add_constant(analysis_df[['manage_trust', 'safety_perception', 'risk'] + controls])
+# Step 2: trust = f(manage_trust, safe_management, risk, controls)
+X2 = sm.add_constant(analysis_df[['manage_trust', 'safe_management', 'risk'] + controls])
 m_step2 = sm.OLS(analysis_df['trust'], X2).fit()
 
-# Step 3: consent = f(manage_trust, trust, safety_perception, risk, controls)
-X3 = sm.add_constant(analysis_df[['manage_trust', 'trust', 'safety_perception', 'risk'] + controls])
+# Step 3: consent = f(manage_trust, trust, safe_management, risk, controls)
+X3 = sm.add_constant(analysis_df[['manage_trust', 'trust', 'safe_management', 'risk'] + controls])
 m_step3 = sm.OLS(analysis_df['consent'], X3).fit()
 
 # ─────────────────────────────────────────────────────────────
@@ -137,13 +137,13 @@ output.append(f"N = {n}, 부트스트랩 반복 = {N_BOOT}회 (유효 = {n_valid
 output.append("통제변수: 성별(female), 연령(age), 교육(edu_college, edu_grad), 소득(income)")
 output.append("=" * 70)
 
-output.append("\n[1단계: manage_trust → safety_perception]")
+output.append("\n[1단계: manage_trust → safe_management]")
 output.append(m_step1.summary().as_text())
 
-output.append("\n[2단계: manage_trust + safety_perception → trust (제도적 신뢰)]")
+output.append("\n[2단계: manage_trust + safe_management → trust (제도적 신뢰)]")
 output.append(m_step2.summary().as_text())
 
-output.append("\n[3단계: manage_trust + trust + safety_perception → consent]")
+output.append("\n[3단계: manage_trust + trust + safe_management → consent]")
 output.append(m_step3.summary().as_text())
 
 output.append("\n" + "=" * 70)
@@ -157,7 +157,7 @@ output.append(f"  부트스트랩 SE = {np.std(boot_ind1):.4f}")
 output.append(f"  95% CI = [{ci_ind1[0]:.4f}, {ci_ind1[1]:.4f}]")
 output.append(f"  유의성: {sig_ind1}")
 
-output.append(f"\n[간접효과 2] safety_perception → trust → consent (사후규제의 제도적 역설 경로)")
+output.append(f"\n[간접효과 2] safe_management → trust → consent (안전관리 긍정 인식 경로)")
 output.append(f"  경로계수: a2(safety→trust) = {obs_a2:.4f}")
 output.append(f"  경로계수: b1(trust→consent) = {obs_b1:.4f}")
 output.append(f"  간접효과 추정치 = {obs_ind2:.4f}")

@@ -7,7 +7,7 @@ worker = pd.read_csv("../clean/worker_clean.csv")
 # -------------------------
 # 평균 비교
 # -------------------------
-people_mean = people['safety_perception'].mean()
+people_mean = people['safe_management'].mean()
 worker_mean = worker['safety'].mean()
 
 print("people safety:", people_mean)
@@ -17,7 +17,7 @@ print("worker safety:", worker_mean)
 # t-test
 # -------------------------
 t, p = ttest_ind(
-    people['safety_perception'].dropna(),
+    people['safe_management'].dropna(),
     worker['safety'].dropna()
 )
 

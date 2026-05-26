@@ -1,4 +1,4 @@
-# CLAUDE.md
+﻿# CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -61,7 +61,7 @@ The 15 scripts in `code/` form a **sequential pipeline** — each reads from pri
 - `q5`, `q6` → `manage_trust`
 - `q7`, `q8`, `q9` → `consent`
 - `q21`, `q22` → `risk`
-- `q25` → `safety_perception` (single item)
+- `q25` → `safe_management` (recoded binary item)
 - `q26` → `trust` (single item)
 - `q31`, `q32`, `q13` → worker safety items
 - `q41`, `q42` → worker management items
@@ -104,3 +104,4 @@ Avoid:
 - awkward literal translation
 - excessive English sentence structure
 - informal wording
+

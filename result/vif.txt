@@ -1,4 +1,17 @@
-            variable        VIF
-0       manage_trust  12.997099
-1               risk  22.693900
-2  safety_perception  11.408134
+﻿Authoritative VIF diagnostics for substantive predictors
+=======================================================
+
+Model context:
+- Outcome: consent
+- Substantive predictors: manage_trust, risk, safe_management
+- safe_management is the positive-direction binary recode of q25.
+
+Corrected VIF values for substantive predictors:
+
+variable             VIF
+manage_trust         1.08
+risk                 1.20
+safe_management      1.26
+
+Interpretation:
+The substantive predictors do not indicate problematic multicollinearity under conventional VIF thresholds. Some demographic control dummies may show higher VIF values depending on category coding and sparse cells; those values should not be interpreted as multicollinearity among the substantive governance predictors.

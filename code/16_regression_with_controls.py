@@ -34,7 +34,7 @@ df['income'] = df['dq4']
 
 # 결측치 확인
 controls = ['female', 'age', 'edu_college', 'edu_grad', 'income']
-main_vars = ['consent', 'manage_trust', 'risk', 'safety_perception', 'trust']
+main_vars = ['consent', 'manage_trust', 'risk', 'safe_management', 'trust']
 analysis_df = df[main_vars + controls].dropna()
 print(f"분석 사례 수 (결측 제거 후): {len(analysis_df)}")
 print(f"원 표본 대비 유지율: {len(analysis_df)/len(df)*100:.1f}%")
@@ -42,14 +42,14 @@ print(f"원 표본 대비 유지율: {len(analysis_df)/len(df)*100:.1f}%")
 # ─────────────────────────────
 # Model 1: 기본 OLS (통제변수 없음)
 # ─────────────────────────────
-X1 = sm.add_constant(analysis_df[['manage_trust', 'risk', 'safety_perception']])
+X1 = sm.add_constant(analysis_df[['manage_trust', 'risk', 'safe_management']])
 y = analysis_df['consent']
 model1 = sm.OLS(y, X1).fit()
 
 # ─────────────────────────────
 # Model 2: OLS + 통제변수
 # ─────────────────────────────
-pred2 = ['manage_trust', 'risk', 'safety_perception'] + controls
+pred2 = ['manage_trust', 'risk', 'safe_management'] + controls
 X2 = sm.add_constant(analysis_df[pred2])
 model2 = sm.OLS(y, X2).fit()
 
@@ -89,7 +89,7 @@ output.append(vif_df.to_string(index=False))
 output.append("\n\n[핵심 계수 비교표]")
 output.append(f"{'변수':<25} {'Model1 β':>10} {'Model2 β':>10} {'Model3 z':>10} {'Model2 p':>10}")
 output.append("-" * 65)
-for var in ['manage_trust', 'risk', 'safety_perception']:
+for var in ['manage_trust', 'risk', 'safe_management']:
     b1 = model1.params.get(var, np.nan)
     b2 = model2.params.get(var, np.nan)
     b3 = model3.tvalues.get(var, np.nan)

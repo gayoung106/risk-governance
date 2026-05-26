@@ -1,12 +1,12 @@
-import pandas as pd
+﻿import pandas as pd
 import statsmodels.api as sm
 
 df = pd.read_csv("../clean/people_clean.csv")
 
 # -------------------------
-# 기본 통계
+# 湲곕낯 ?듦퀎
 # -------------------------
-summary = df[['consent','manage_trust','risk','trust','safety_perception']].describe()
+summary = df[['consent','manage_trust','risk','trust','safe_management']].describe()
 
 with open("../result/people_summary.txt", "w") as f:
     f.write(summary.to_string())
@@ -14,9 +14,9 @@ with open("../result/people_summary.txt", "w") as f:
 print(summary)
 
 # -------------------------
-# 회귀 모델 1
+# ?뚭? 紐⑤뜽 1
 # -------------------------
-X = df[['manage_trust','risk','safety_perception']]
+X = df[['manage_trust','risk','safe_management']]
 X = sm.add_constant(X)
 y = df['consent']
 

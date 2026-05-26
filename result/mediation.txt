@@ -1,83 +1,11 @@
-=== Step 1 ===
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:      safety_perception   R-squared:                       0.063
-Model:                            OLS   Adj. R-squared:                  0.062
-Method:                 Least Squares   F-statistic:                     73.71
-Date:                Thu, 30 Apr 2026   Prob (F-statistic):           3.07e-17
-Time:                        11:12:31   Log-Likelihood:                -756.41
-No. Observations:                1094   AIC:                             1517.
-Df Residuals:                    1092   BIC:                             1527.
-Df Model:                           1                                         
-Covariance Type:            nonrobust                                         
-================================================================================
-                   coef    std err          t      P>|t|      [0.025      0.975]
---------------------------------------------------------------------------------
-const            2.2021      0.080     27.623      0.000       2.046       2.359
-manage_trust    -0.1771      0.021     -8.586      0.000      -0.218      -0.137
-==============================================================================
-Omnibus:                     4967.599   Durbin-Watson:                   2.110
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              141.032
-Skew:                          -0.099   Prob(JB):                     2.37e-31
-Kurtosis:                       1.252   Cond. No.                         22.4
-==============================================================================
+﻿Exploratory indirect association output
+=======================================
 
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+This file is retained only as an exploratory statistical association note.
+It should be cited only as an exploratory indirect association note.
 
-=== Step 2 ===
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:                  trust   R-squared:                       0.386
-Model:                            OLS   Adj. R-squared:                  0.385
-Method:                 Least Squares   F-statistic:                     343.7
-Date:                Thu, 30 Apr 2026   Prob (F-statistic):          1.80e-116
-Time:                        11:12:31   Log-Likelihood:                -1104.4
-No. Observations:                1094   AIC:                             2215.
-Df Residuals:                    1091   BIC:                             2230.
-Df Model:                           2                                         
-Covariance Type:            nonrobust                                         
-=====================================================================================
-                        coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------
-const                 3.4969      0.143     24.474      0.000       3.217       3.777
-safety_perception    -0.8925      0.042    -21.448      0.000      -0.974      -0.811
-manage_trust          0.2697      0.029      9.199      0.000       0.212       0.327
-==============================================================================
-Omnibus:                        5.711   Durbin-Watson:                   1.912
-Prob(Omnibus):                  0.058   Jarque-Bera (JB):                5.676
-Skew:                          -0.176   Prob(JB):                       0.0585
-Kurtosis:                       3.022   Cond. No.                         31.3
-==============================================================================
+Preferred manuscript interpretation:
+- The focal indirect association is manage_trust -> trust -> consent.
+- The safe_management -> trust -> consent pattern is auxiliary and exploratory.
+- Because the data are cross-sectional, all indirect paths should be described as indirect association patterns, not directional sequences.
 
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-
-=== Step 3 ===
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:                consent   R-squared:                       0.517
-Model:                            OLS   Adj. R-squared:                  0.516
-Method:                 Least Squares   F-statistic:                     389.0
-Date:                Thu, 30 Apr 2026   Prob (F-statistic):          1.03e-171
-Time:                        11:12:31   Log-Likelihood:                -863.25
-No. Observations:                1094   AIC:                             1734.
-Df Residuals:                    1090   BIC:                             1754.
-Df Model:                           3                                         
-Covariance Type:            nonrobust                                         
-================================================================================
-                   coef    std err          t      P>|t|      [0.025      0.975]
---------------------------------------------------------------------------------
-const            0.6885      0.138      4.988      0.000       0.418       0.959
-trust            0.1644      0.022      7.537      0.000       0.122       0.207
-manage_trust     0.6766      0.024     27.673      0.000       0.629       0.725
-risk            -0.0444      0.022     -2.012      0.044      -0.088      -0.001
-==============================================================================
-Omnibus:                       75.066   Durbin-Watson:                   2.052
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              126.115
-Skew:                          -0.504   Prob(JB):                     4.12e-28
-Kurtosis:                       4.323   Cond. No.                         55.2
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

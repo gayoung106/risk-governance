@@ -3,7 +3,7 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 df = pd.read_csv("../clean/people_clean.csv")
 
-X = df[['manage_trust','risk','safety_perception']]
+X = df[['manage_trust','risk','safe_management']]
 X = X.dropna()
 
 vif = pd.DataFrame()
