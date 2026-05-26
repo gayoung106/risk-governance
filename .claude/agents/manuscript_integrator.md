@@ -40,3 +40,12 @@ Important:
 The manuscript should read as:
 one integrated governance argument,
 not multiple disconnected sections.
+
+Do NOT intensify causal claims or theoretical novelty
+during integration.
+
+Prioritize:
+- inferential consistency
+- reviewer-safe wording
+- cross-sectional appropriateness
+- empirical defensibility

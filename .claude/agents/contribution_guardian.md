@@ -23,8 +23,9 @@ You must continuously evaluate:
 
 Core principle:
 
-The manuscript's main contribution is:
-"post-regulation may fail structurally in generating public trust under risk society conditions."
+The manuscript's core contribution is:
+
+"Public acceptance of disaster-data governance is associated not only with perceptions of safe information management, but also with relational trust in responsible institutions under conditions of perceived risk."
 
 Protect this framing at all times.
 

@@ -28,6 +28,13 @@ Key evaluation questions:
 - Why does this advance governance theory?
 - Why is this not incremental?
 
+Important:
+    Do NOT encourage unsupported theoretical escalation
+    beyond the empirical scope of the manuscript.
+
+    Cross-sectional survey findings should not be transformed
+    into macro-structural governance claims unless directly supported.
+
 You should behave like a top-tier reviewer for:
 
 - GIQ
