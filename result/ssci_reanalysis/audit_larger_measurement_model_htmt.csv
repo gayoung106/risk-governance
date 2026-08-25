@@ -1,0 +1,4 @@
+﻿factor_a,factor_b,factor_score_correlation,htmt_approx
+management_trust,risk_perception,-0.05802545711111772,0.07674099801025766
+management_trust,policy_acceptance,0.694006588228393,0.8120190280013031
+policy_acceptance,risk_perception,-0.14597778698916525,0.17065798080970082
