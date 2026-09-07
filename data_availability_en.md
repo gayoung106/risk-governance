@@ -1,0 +1,3 @@
+# Data Availability Statement
+
+This study uses a secondary survey dataset provided by the Korea Institute of Public Administration (KIPA). The raw survey data are owned by KIPA and were not collected by the author. For this study, the author constructed an analytical dataset by selecting, recoding, and operationalizing variables relevant to the research questions. Because access to the original raw data is governed by the data provider's policies, the raw data are not redistributed by the author. The Python scripts used for variable construction and statistical analysis, together with the accompanying documentation, are available from the corresponding author upon reasonable request.
