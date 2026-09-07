@@ -49,7 +49,7 @@ Final model: OLS with HC3 robust standard errors. Dependent variable: Policy/Dat
 | safe_management | 0.192968 | 0.035385 | [0.123537, 0.262399] | 6.11626e-08 | Positive association with policy/data-use acceptance. |
 | sq1 | 0.001623 | 0.003431 | [-0.005108, 0.008355] | 0.636209 | Residence control; not statistically distinguishable from zero in exported HC3 table. |
 | sq3_1 | -0.002353 | 0.001459 | [-0.005216, 0.000511] | 0.107212 | Age control; not statistically distinguishable from zero in exported HC3 table. |
-| C(sq2) | included | not exported | not exported | not exported | Sex categorical control included in verified formula; dummy coefficients were not exported in final CSV. |
+| C(sq2)[T.2.0] | 0.074934 | 0.033076 | [0.010034, 0.139835] | 0.023679 | Sex categorical control (1=male, 2=female; reference=male). Now exported in `main_ols_hc3.csv` (previously omitted from the CSV export). |
 
 Model N = 1,094. Baseline R2 = 0.507893. Adjusted R2 was not exported in the final audit CSV; do not import adjusted R2 from older control-coding outputs as the final value.
 

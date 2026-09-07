@@ -189,7 +189,14 @@ def run_main_models(people: pd.DataFrame) -> dict[str, object]:
     fig.savefig(OUT / "interaction_plot.png", dpi=300)
     plt.close(fig)
 
-    tidy_result(hc3, ["manage_trust", "risk", "safe_management", "sq1", "sq3_1"]).to_csv(
+    tidy_result(
+        hc3,
+        # NOTE: sq2 is stored as float64 (1.0/2.0) in people_clean.csv, so patsy's
+        # treatment coding labels the dummy "C(sq2)[T.2.0]", not "C(sq2)[T.2]".
+        # The literal label must match model.params.index exactly or tidy_result()
+        # silently drops the term.
+        ["manage_trust", "risk", "safe_management", "sq1", "C(sq2)[T.2.0]", "sq3_1"],
+    ).to_csv(
         OUT / "main_ols_hc3.csv", index=False, encoding="utf-8-sig"
     )
     tidy_result(inter, ["manage_c", "risk_c", "manage_c:risk_c", "safe_management"]).to_csv(
