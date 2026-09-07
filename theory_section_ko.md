@@ -16,7 +16,7 @@
 
 Mayer, Davis, & Schoorman(1995)의 신뢰 모형에 비추어 보면, q5(필요성 인식)는 기관이 추구하는 목적이 공익에 부합한다는 판단에, q6(효과성 인식)는 기관이 그 목적을 실제로 달성할 수 있는 역량(ability)에 대한 판단에 각각 대응한다. 즉 관리신뢰는 무결성(integrity) 차원까지 포괄하는 전면적 신뢰가 아니라, 목적의 정당성과 실행 역량이라는 두 판단이 결합된 성과 기반 신뢰로 제한적으로 이해되어야 한다.
 
-시민이 데이터 처리의 기술적 세부사항을 직접 검증할 수 없는 상황에서(Luhmann, 1979), 이러한 필요성·효과성 판단은 검증을 대신하는 인지적 지름길로 작동한다. 정책 목적이 정당하고 효과적이라고 판단할수록, 시민은 개별 위험을 스스로 계산하기보다 그 판단에 근거하여 협조할 가능성이 커진다. 따라서 관리신뢰는 정책수용성과 정적으로 연관될 것으로 예상된다.
+시민이 데이터 처리의 기술적 세부사항을 직접 검증할 수 없는 상황에서(Luhmann, 1979), 이러한 필요성·효과성 판단은 검증을 대신하는 인지적 지름길로 작동한다(Xu, Dinev, Smith, & Hart, 2011). 정책 목적이 정당하고 효과적이라고 판단할수록, 시민은 개별 위험을 스스로 계산하기보다 그 판단에 근거하여 협조할 가능성이 커진다(Mutimukwe, Kolkowska, & Grönlund, 2020). 따라서 관리신뢰는 정책수용성과 정적으로 연관될 것으로 예상된다.
 
 ### 2.3 위험인식의 메커니즘: 통제감 상실과 방어적 태도
 
@@ -79,4 +79,10 @@ Luhmann, N. (1979). _Trust and power_. Wiley.
 
 Mayer, R. C., Davis, J. H., & Schoorman, F. D. (1995). An integrative model of organizational trust. _Academy of Management Review, 20_(3), 709-734.
 
+Mutimukwe, C., Kolkowska, E., & Grönlund, Å. (2020). Information privacy in e-service: Effect of organizational privacy assurances on individual privacy concerns, perceptions, trust and self-disclosure behavior. _Government Information Quarterly, 37_(1), 101413. https://doi.org/10.1016/j.giq.2019.101413
+
 Slovic, P. (1987). Perception of risk. _Science, 236_(4799), 280-285.
+
+Trein, P., & Varone, F. (2024). Citizens' agreement to share personal data for public policies: Trust and issue importance. _Journal of European Public Policy, 31_(9), 2483-2508. https://doi.org/10.1080/13501763.2023.2205434
+
+Xu, H., Dinev, T., Smith, J., & Hart, P. (2011). Information privacy concerns: Linking individual perceptions with institutional privacy assurances. _Journal of the Association for Information Systems, 12_(12), 798-824. https://doi.org/10.17705/1jais.00281
